@@ -1,27 +1,29 @@
-import { createServer } from 'http';
-import { Server } from 'socket.io';
+import express from "express";
+import http from "http";
+import { Server } from "socket.io";
 
-const httpServer = createServer();
-const io = new Server(httpServer, {
-    cors: {
-        origin: '*',
-    },
+const app = express();
+const server = http.createServer(app);
+const io = new Server(server, {
+  cors: {
+    origin: "*",
+  },
 });
 
-io.on('connection', (socket) => {
-    console.log('A user connected:', socket.id);
+const PORT = process.env.PORT || 3010;
 
-    socket.on('message', (data) => {
-        console.log('Received message:', data);
-        io.emit('message', data); // Broadcast to all clients
-    });
-
-    socket.on('disconnect', () => {
-        console.log('User disconnected:', socket.id);
-    });
+app.get("/", (req, res) => {
+  res.send("Socket.IO server (ESM) running");
 });
 
-const PORT = process.env.PORT || 3000;
+io.on("connection", (socket) => {
+  console.log("Client connected:", socket.id);
+
+  socket.on("disconnect", () => {
+    console.log("Client disconnected:", socket.id);
+  });
+});
+
 server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
