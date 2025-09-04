@@ -1,10 +1,13 @@
+// import {
+//     Players__components
+// } from "@/app/components";
+import Cordy__Sign from "@/app/cordy_under_developments";
 
 export default function Players() {
     return(
-        <section>
-            <div>
-                
-            </div>
-        </section>
+        <>
+            <Cordy__Sign />
+            {/* <Players__components /> */}
+        </>
     );
 }
