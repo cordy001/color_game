@@ -6,7 +6,9 @@
     align-items: center;
     flex-flow: column;
     position: fixed;
+    top: 0;
     z-index: 9999;
+    background: #3E5A6F;
 }
 .container h2 {
     margin: 10px 0;
