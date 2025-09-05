@@ -1,6 +1,9 @@
 import {
     header__css
 } from "@/app/config/css";
+import {
+    ConnectButton
+} from "@rainbow-me/rainbowkit";
 
 import Image from "next/image";
 
@@ -18,6 +21,7 @@ export default function Header() {
                 width={Image__size}
                 height={Image__size}
                 />
+                <ConnectButton showBalance={false} />
             </div>
         </header>
     );

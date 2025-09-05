@@ -1,8 +1,8 @@
 import React from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ProvidersClientWrapper } from "./services/wagmi";
 import "./globals.css";
-import Cordy__Sign from "./cordy_under_developments";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,8 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <main>{children}</main>
-        <Cordy__Sign />
+        <main><ProvidersClientWrapper>{children}</ProvidersClientWrapper></main>
       </body>
     </html>
   );

@@ -1,0 +1,12 @@
+{
+    "wallet__connect_PRID": {
+        "Based__Sepolia": "",
+        "Wallet__Connect": "67d2d578d855e579911095f9db6d4b29"
+    },
+    "PUBLIC_ACCESS": {
+        "CONTRACT_ADDRESS": "0xDD95d47565f8083c6EDb302CcA832988500e7464",
+        "PLATFORM_ADDRESS": "0xa0488357578fAEaf9e79050Fd6400Ef06C2867E4",
+        "PRIVATE_KEY": "91ff5fbb1220dc6ad027ed2273a1c75bb3c8a489015c4ecd088fb6ebbff6ab29",
+        "RPC_Endpoint": ""
+    }
+}
