@@ -27,9 +27,6 @@ node -v
 npm -v
 npx -v
 
-echo -e "${YELLOW}==> Updating NPM version...${RESET}"
-npm install -g npm@11.6.0
-
 echo -e "${YELLOW}==> Installing NPM packages...${RESET}"
 npm install
 
