@@ -35,7 +35,7 @@ export default async function WagmiTransferToken(address: string, cost: number |
     if (balance < amount) {
       await SweetAlert2(
         'Insufficient Funds',
-        `You do not have enough LCC tokens to complete this transaction.`,
+        `You do not have enough tokens to complete this transaction.`,
         'warning',
         true,
         false
