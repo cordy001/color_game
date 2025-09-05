@@ -53,6 +53,8 @@ export default function __Game() {
         }
         const transacs = await WagmiTransferToken(address, newCost);
 
+        setShowStatus(true);
+
         await refetch();
 
         if (!transacs || transacs !== true) return;
