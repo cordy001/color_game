@@ -3,7 +3,7 @@ export default async function CalculateRewards(
     chosenColors: string[],
 ) {
     const pointsPerMatch = 20;
-    const extraPointsPerDuplicate = 10;
+    const extraPointsPerDuplicate = 40;
 
     let totalPoints = 0;
 

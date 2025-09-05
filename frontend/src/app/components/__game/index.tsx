@@ -44,7 +44,7 @@ export default function __Game() {
         
         if (chosenColors.length <= 0) return alert("Please pick colors or more");
 
-        const newCost = chosenColors.length * 20;
+        const newCost = chosenColors.length * 30;
         setCost(newCost);
 
         if (!address) {
