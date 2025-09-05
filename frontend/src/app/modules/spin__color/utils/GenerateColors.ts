@@ -6,7 +6,6 @@ export default function GenerateColors(
     color_1: SpanRef, 
     color_2: SpanRef, 
     color_3: SpanRef,
-    setShowStatus: (value: boolean) => void
 ): Promise<[string, string, string]> {
 
     const color__set = [ 
@@ -17,8 +16,6 @@ export default function GenerateColors(
         { color: "#ff00ff", key: "pink" },
         { color: "#ffffff", key: "white" },
     ];
-
-    setShowStatus(true);
 
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -31,8 +28,6 @@ export default function GenerateColors(
             if (color_1.current) color_1.current.style.backgroundColor = colorObj1.color;
             if (color_2.current) color_2.current.style.backgroundColor = colorObj2.color;
             if (color_3.current) color_3.current.style.backgroundColor = colorObj3.color;
-
-            setShowStatus(false);
 
             resolve([colorObj1.key, colorObj2.key, colorObj3.key]);
         }, 5000);

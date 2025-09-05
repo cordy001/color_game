@@ -53,13 +53,13 @@ export default function __Game() {
         }
         const transacs = await WagmiTransferToken(address, newCost);
 
-        setShowStatus(true);
-
         await refetch();
 
         if (!transacs || transacs !== true) return;
 
-        const result = await GenerateColors(color_1, color_2, color_3, setShowStatus);
+        setShowStatus(true);
+
+        const result = await GenerateColors(color_1, color_2, color_3);
 
 
         setTimeout(async() => {
@@ -78,6 +78,8 @@ export default function __Game() {
             const data = await res.json();
 
             await refetch();
+
+            setShowStatus(false);
 
             console.log("Reward Recieve ", data);
 
