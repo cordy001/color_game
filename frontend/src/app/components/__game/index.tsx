@@ -116,7 +116,7 @@ export default function __Game() {
                 <span className={__game__css.color__3} ref={color_3}></span>
             </div>
             <div className={__game__css.buttons}>
-                <button disabled={showStatus}>Online Servers</button>
+                <button disabled={showStatus} ><a href="/players">Online Servers</a></button>
                 <button disabled={showStatus} style={{ background: "#f00" }} onClick={ClearArrays}>Clear Choosen Colors</button>
                 <button 
                     onClick={HandleSpin}

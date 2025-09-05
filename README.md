@@ -15,29 +15,20 @@ This project is a fun, interactive color game built with Next.js and TypeScript.
 
 **Disclaimer:** This project does **not** collect any user data. All data is processed and stored locally in your browser or wallet.
 
-### 1. Clone and Install
+### 1. Clone the repo
 
 ```sh
 git clone https://github.com/cordy001/color_game.git
 cd color_game
-cd frontend && npm install
-cd ../backend && npm install
 ```
 
-### 2. Run the App
+### 2. Setup
 
-Start the backend (if needed):
+Start this 
 
-```sh
-cd backend
-npx ts-node socket.ts
 ```
+./setup.sh
 
-Start the frontend:
-
-```sh
-cd frontend
-npm run dev
 ```
 
 Visit [http://localhost:3000/](http://localhost:3000/) in your browser.

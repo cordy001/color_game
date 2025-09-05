@@ -18,7 +18,7 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 # Install essential packages (optional if already present in Codespaces)
 echo -e "${YELLOW}==> Installing Essential Packages...${RESET}"
 
-sudo apt-get install -y nodejs npm
+sudo apt-get install -y nodejs
 
 # Verify installations
 
