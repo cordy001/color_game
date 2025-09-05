@@ -42,7 +42,7 @@ export default function __Game() {
 
     const HandleSpin = async() => {
         
-        if (chosenColors.length < 0) return alert("Please pick colors or more");
+        if (chosenColors.length <= 0) return alert("Please pick colors or more");
 
         const newCost = chosenColors.length * 10;
         setCost(newCost);
