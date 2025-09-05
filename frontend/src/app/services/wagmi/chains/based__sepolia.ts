@@ -14,12 +14,12 @@ export default function BaseSepolia() {
         rpcUrls: {
             default: {
             http: [
-                process.env.NEXT_PUBLIC_LINK_PROJECT_ID_SEPOLIA || setting.wallet__connect_PRID.Based__Sepolia,
+                process.env.NEXT_PUBLIC_LINK_PROJECT_ID_SEPOLIA || setting.PUBLIC_ACCESS.RPC_Endpoint,
             ],
             },
             public: {
             http: [
-                process.env.NEXT_PUBLIC_LINK_PROJECT_ID_SEPOLIA || setting.wallet__connect_PRID.Based__Sepolia,
+                process.env.NEXT_PUBLIC_LINK_PROJECT_ID_SEPOLIA || setting.PUBLIC_ACCESS.RPC_Endpoint,
             ],
             },
         },
