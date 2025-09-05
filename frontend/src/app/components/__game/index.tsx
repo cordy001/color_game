@@ -69,7 +69,7 @@ export default function __Game() {
             setPoints(totalPoints);
 
             setShowStatus(false);
-            
+
         if (totalPoints) {
             const res = await fetch("/services/api/prize", {
                 method: "POST",
@@ -80,13 +80,13 @@ export default function __Game() {
 
             const data = await res.json();
 
-            await refetch();
-
             
 
             console.log("Reward Recieve ", data);
 
         }
+
+        await refetch();
 
 
         }, 1000);
