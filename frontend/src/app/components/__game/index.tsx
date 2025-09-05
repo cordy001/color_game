@@ -61,12 +61,15 @@ export default function __Game() {
 
         const result = await GenerateColors(color_1, color_2, color_3);
 
+        
 
         setTimeout(async() => {
             const totalPoints = await CalculateRewards(result, chosenColors);
             
             setPoints(totalPoints);
 
+            setShowStatus(false);
+            
         if (totalPoints) {
             const res = await fetch("/services/api/prize", {
                 method: "POST",
@@ -79,11 +82,12 @@ export default function __Game() {
 
             await refetch();
 
-            setShowStatus(false);
+            
 
             console.log("Reward Recieve ", data);
 
         }
+
 
         }, 1000);
 
